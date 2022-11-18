@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw; 
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+
+    grid-template-areas:
+    "header header header"
+    "image image aside"
+    "section section aside"
+    "footer footer footer"
+    ;
+}
+
+header {
+    grid-area: header;
+}
+
+section {
+    grid-area: section;
+    display: flex;
+}
+
+aside {
+    grid-area: aside;
+    color: white;
+    background-color: 	#00001a;
+    width: 350px;
+    padding: 30px;
+    margin: 25px 0px 0px -150px;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content:flex-start ;
+}
+
+.image-1 {
+    width: 700px;
+    grid-area: image;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0px 0px 150px;
+}
+
+.title {
+    font-size: 45px;
+    font-weight: 800;
+    width: 290px;
+    margin: 30px 0px 0px 150px;
+}
+
+.text-section {
+    width: 350px;
+    margin: 30px 0px 0px 50px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: 	#5d5f79;
+}
+
+button {
+    width: 100px;
+    margin: 30px 0px 0px 50px;
+}
+
+.img-news {
+    width: 100px;
+   
+}
+
+.news-1, .news-2, .news-3 {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 150px;
+}
+
+.news-2, .news-3 {
+    margin-left: 40px;
+}
+
+.text-news {
+    width: 230px;
+}
+
+header {
+    display: flex;
+    margin: 70px 0px 0px 150px;
+}
+
+.menu {
+    margin: 20px 0px 0px 450px;
+}
+
+a {
+    margin-left: 50px;
+    color:	#5d5f79;
+}
+
+.text-news {
+    font-size: 14px;
+    width: 200px;
+    margin: 0px 0px 0px 20px;
+    color:	#5d5f79;
+    line-height: 1.5;
+   
+}
+
+h2 {
+    font-size: 17px;
+    margin: 10px 0px 10px 20px;
+    font-weight: bold;
+}
+
+.number-news {
+    color:	#c5c6ce;
+    font-size: 25px;
+    margin: 0px 0px 0px 20px;
+}
+
+.title-new {
+    color: 	#e9ab53;
+    font-size: 35px;
+    margin: 0px 0px 0px 0px;
+    width: 400px;
+}
+
+button {
+    background-color: #f15e50;
+    color: white;
+    letter-spacing: 3px;
+    border: none;
+    width: 150px;
+    height: 40px;
+    font-weight: 400;
+    font-weight: bold;
+}
+
+.text-aside {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-top: 20px;
+    width: 250px;
+    color: 	#fffdfa;
+
+}
+
+h3 {
+    font-size: 18px;
+    
+}
+
+a:hover {
+    color:#f15e50;
+    cursor: pointer;
+}
+h3:hover {
+    color: #e9ab53;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #00001a;
+    cursor: pointer;
+}
+
+h2:hover {
+    color:#f15e50;
+    cursor: pointer;
+}
